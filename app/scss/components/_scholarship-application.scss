@@ -1,0 +1,59 @@
+.scholarship-application {
+
+    &__text-content {
+        text-align: center;
+
+        h2,
+        p {
+            color: $purple !important;
+        }
+
+        p {
+            padding: 4.2rem 2rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+
+        input {
+
+            flex: 1;
+            border: 1px solid $purple;
+            border-radius: 15px;
+            padding: 2.1rem 1.5rem;
+            margin-top: 4rem;
+            //margin-right: 4rem;
+
+            @media screen and (min-width: 824px) {
+                &:not(:last-child) {
+                    margin-right: 4rem;
+                }
+            }
+        }
+
+        input::placeholder {
+            font-family: 'Proxima Nova', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 3rem;
+            color: $purple;
+        }
+    }
+
+    .drag-drop-form {
+        width: 33rem;
+        border: 2px solid $purple;
+        border-radius: 15px;
+        margin-top: 4rem;
+
+    }
+}
