@@ -31,9 +31,8 @@
             border-radius: 15px;
             padding: 2.1rem 1.5rem;
             margin-top: 4rem;
-            //margin-right: 4rem;
 
-            @media screen and (min-width: 824px) {
+            @media screen and (min-width: 540px) {
                 &:not(:last-child) {
                     margin-right: 4rem;
                 }
@@ -50,10 +49,25 @@
     }
 
     .drag-drop-form {
-        width: 33rem;
+        max-width: 74rem;
         border: 2px solid $purple;
         border-radius: 15px;
+        margin: auto;
         margin-top: 4rem;
+        background-color: $light-gray;
+        margin-bottom: 4rem;
 
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 4.2rem;
+        }
+
+        p {
+            text-align: center;
+            color: $purple !important;
+            margin-top: 2.1rem;
+            margin-bottom: 4.2rem;
+        }
     }
 }
