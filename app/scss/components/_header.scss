@@ -1,0 +1,55 @@
+.header-navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    nav ul li {
+    
+        &:not(:last-child) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        &:nth-last-child(2) {
+            padding-right: 0;
+        }
+
+        a,
+        span {
+            font-family: $ff-proxima;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .active{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+    nav ul {
+        .language-switcher-item {
+            display: flex;
+            margin-left: 0.5rem;
+
+            &:not(:last-child) {
+        
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 20px;
+                    width: 0.1rem;
+                    background-color: #fff;
+                    margin-left: 1rem;
+                }
+            
+        }
+
+    }
+    }
+    
+}

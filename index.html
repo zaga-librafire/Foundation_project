@@ -10,6 +10,21 @@
 </head>
 
 <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="/">
+        <label for="quantity">Enter the amount you want to donate:</label><br><br>
+        <input type="number" id="quantity" name="quantity" min="0"><br><br>
+        <input class="donate-submit" type="submit" value="Donate">
+      </form>
+    </div>
+  
+  </div>
+
     <header>
         <div class="container">
             <div class="header-navigation flex justify-content-between items-center mt-8 container">
@@ -21,13 +36,12 @@
                         <li><a href="#mission">Mission</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="http://">Apply</a></li>
-                        <li><a class="buttons bg-purple" href=""><span>Donate now</span></a></li>
-                        <li><a class="active-1" href="http://">Eng</a>
-                            <span> | </span>
-                            <a class="active-2" href="http://">Srb</a>
-                        </li>
+                        <li><a class="buttons bg-purple" href="#" id="donateBtn"><span>Donate now</span></a></li>
+                        <li class="language-switcher-item"><span class="active">Eng</span></li>
+                        <li class="language-switcher-item"><span >Srb</span></li>
                     </ul>
                 </nav>
+
             </div>
         </div>
     </header>
@@ -48,16 +62,29 @@
         <div class="mission-about-content flex" id="mission">
             <div class="mission-text-content">
                 <h2>Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.</p>
             </div>
             <img class="mission-about-content__image" src="img/image-1-min.png.png" alt="Happy people with book">
         </div>
-        
+
         <div class="mission-about-content  flex" id="about">
             <img class="mission-about-content__image" src="img/image-2-min.png.png" alt="Happy people">
             <div class="about-text-content">
                 <h2>About</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<a href="http://"> Duis autem vel eum iriure dolor</a> in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<a href="http://"> Duis autem
+                        vel eum iriure dolor</a> in hendrerit in vulputate velit esse molestie consequat, vel illum
+                    dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                    praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                    amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                    lobortis nisl ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
     </section>

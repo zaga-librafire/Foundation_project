@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","names":[],"sources":[],"mappings":""}
+{"version":3,"file":"script.js","names":["modal","document","getElementById","btn","span","getElementsByClassName","onclick","style","display","window","event","target"],"sources":["script.js"],"mappings":"AACA,IAAIA,MAAQC,SAASC,eAAe,WAGhCC,IAAMF,SAASC,eAAe,aAG9BE,KAAOH,SAASI,uBAAuB,SAAS,GAGpDF,IAAIG,QAAU,WACZN,MAAMO,MAAMC,QAAU,OACxB,EAGAJ,KAAKE,QAAU,WACbN,MAAMO,MAAMC,QAAU,MACxB,EAGAC,OAAOH,QAAU,SAASI,GACpBA,EAAMC,QAAUX,QAClBA,MAAMO,MAAMC,QAAU,OAE1B"}
