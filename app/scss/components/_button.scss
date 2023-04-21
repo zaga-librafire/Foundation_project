@@ -1,0 +1,16 @@
+.buttons {
+    border-radius: 15px;
+    padding: 2.1rem 4.7rem;
+    border: none;
+    transition: all ease-in-out 0.2s;
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    &.bg-blue:hover {
+        background-color: $yellow;
+        color: $blue;
+    }
+
+}

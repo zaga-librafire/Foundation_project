@@ -1,0 +1,55 @@
+.mission-about {
+    margin-top: 10rem;
+
+    .mission-about-content {
+        margin-bottom: 4rem;
+
+        .mission-text-content {
+            max-width: 94rem;
+            border: 2px solid #3A86FF;
+            border-radius: 15px;
+            margin-right: 4rem;
+    
+            h2 {
+                padding: 4.1rem 6rem 0;
+            }
+    
+            p {
+                max-width: 82rem;
+                padding: 4.2rem 6rem 4rem;
+                min-height: 17.2rem;
+            }
+        }
+
+        &__image {
+            overflow: hidden;
+            flex: 1;
+        }
+    }
+
+    .about-text-content {
+        max-width: 94rem;
+        border: 2px solid #8338EC;
+        border-radius: 15px;
+        margin-left: 4rem;
+        
+        h2, p {
+            color: $purple !important;
+        }
+
+        h2 {
+            padding: 4.1rem 6rem 0;
+        }
+
+        p {
+            max-width: 82rem;
+            padding: 4.2rem 6rem 4rem;
+            min-height: 17.2rem;
+
+            a {
+                color: $purple;
+            }
+        }
+    }
+    
+}
