@@ -98,19 +98,43 @@
             <h3>All fields are required</h3>
         </div>
 
-        <div class="scholarship-application__form">
-            <form action="/">
-                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-                <input type="text" id="last-name" name="last-name" placeholder="Last Name"  required>
-                <input type="tel" id="phone" name="phone" placeholder="Phone Number"  required>
-                <input type="email" id="email" name="email" placeholder="E-Mail"  required>
+        <div>
+            <form class="scholarship-application-form" action="/">
+                <input class="scholarship-application-form__item" type="text" id="first-name" name="first-name"
+                    placeholder="First Name" required>
+                <input class="scholarship-application-form__item" type="text" id="last-name" name="last-name"
+                    placeholder="Last Name" required>
+                <input class="scholarship-application-form__item" type="tel" id="phone" name="phone"
+                    placeholder="Phone Number" required>
+                <input class="scholarship-application-form__item" type="email" id="email" name="email"
+                    placeholder="E-Mail" required>
             </form>
         </div>
 
-        <div class="drag-drop-form">
-            <img src="img/drag-drop-icon.svg.svg" alt="Drag drop icon">
-            <p><a class="text-decoration text-purple" href=""><span class="ff-proxima-black">Choose files</span></a>  or drag them here</p>
-        </div>
+        <form class="drag-drop-form" id="file-upload-form" action="/">
+            <div class="choose-files-or-drag">
+                <img src="img/drag-drop-icon.svg.svg" alt="Drag drop icon">
+                <div class="file-input">
+
+                    <input type="file" id="file-input" multiple>
+
+
+                    <label for="file-input"><span class="ff-proxima-black cursor-pointer">Choose files</span> or drag
+                        them here</label>
+                </div>
+            </div>
+
+            <div id="file-list"></div>
+
+            <div class="agreement">
+                <input type="checkbox" id="agreement-checkbox">
+                <label for="agreement-checkbox">I agree that I will not share the content of the loaded files</label>
+            </div>
+
+            <button class="submit-button" type="submit" id="submit-button"
+                    disabled>Apply</button>
+        </form>
+
     </section>
 
     <script src="/dist/script.js"></script>

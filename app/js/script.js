@@ -23,3 +23,49 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+const fileInput = document.getElementById('file-input');
+const fileList = document.getElementById('file-list');
+const agreementCheckbox = document.getElementById('agreement-checkbox');
+const submitButton = document.getElementById('submit-button');
+
+fileInput.addEventListener('change', () => {
+  //fileList.innerHTML = ''; 
+  for (let i = 0; i < fileInput.files.length; i++) {
+    const file = fileInput.files[i];
+    const fileItem = document.createElement('div');
+    fileItem.className = 'file';
+
+    const fileName = document.createElement('span');
+    fileName.textContent = file.name;
+    fileItem.appendChild(fileName);
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'X';
+    removeButton.addEventListener('click', () => {
+      fileItem.remove();
+      checkAgreement();
+    });
+    fileItem.appendChild(removeButton);
+
+    fileList.appendChild(fileItem);
+  }
+
+  checkAgreement();
+});
+
+agreementCheckbox.addEventListener('change', () => {
+  checkAgreement();
+});
+
+function checkAgreement() {
+  if (agreementCheckbox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+document.getElementById('file-upload-form').addEventListener('submit', (event) => {
+  event.preventDefault(); 
+});

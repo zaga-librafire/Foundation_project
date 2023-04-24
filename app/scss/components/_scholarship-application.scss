@@ -1,73 +1,161 @@
 .scholarship-application {
 
-    &__text-content {
+  &__text-content {
+    text-align: center;
+
+    h2,
+    p {
+      color: $purple !important;
+    }
+  }
+
+  .scholarship-application-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    &__item {
+      flex: 1;
+      border: 1px solid $purple;
+      border-radius: 15px;
+      padding: 2.1rem 1.5rem;
+      margin-top: 4rem;
+
+      @media screen and (min-width: 442px) {
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+
+  //tr:nth-child(odd)
+  //442, 538
+
+  input::placeholder {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $purple;
+  }
+
+
+  // .file-input {
+  //   display: inline-block;
+  //   border: 2px solid #ccc;
+  //   padding: 10px;
+  //   border-radius: 5px;
+  // }
+
+  #file-list {
+    margin-top: 10px;
+  }
+
+  .file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .file span {
+    margin-right: 5px;
+  }
+
+  .file button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+  }
+
+  // .agreement {
+  //   margin-top: 10px;
+  // }
+
+  // #submit-button {
+  //   display: block;
+  //   margin-top: 10px;
+  // }
+
+  .drag-drop-form {
+    text-align: center;
+
+    .choose-files-or-drag {
+      position: relative;
+      max-width: 74rem;
+      border: 2px solid $purple;
+      border-radius: 15px;
+      margin: auto;
+      margin-top: 4rem;
+      background-color: $light-gray;
+      margin-bottom: 4rem;
+
+      img {
+        display: block;
+        margin: auto;
+        margin-top: 4.2rem;
+      }
+
+      .file-input {
+        padding: 2.1rem 0 4.2rem;
         text-align: center;
 
-        h2,
-        p {
-            color: $purple !important;
-        }
-
-        p {
-            padding: 4.2rem 2rem;
-        }
-    }
-
-    &__form {
-        display: flex;
-        flex-wrap: wrap;
-
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            width: 100%;
-        }
-
         input {
-
-            flex: 1;
-            border: 1px solid $purple;
-            border-radius: 15px;
-            padding: 2.1rem 1.5rem;
-            margin-top: 4rem;
-
-            @media screen and (min-width: 540px) {
-                &:not(:last-child) {
-                    margin-right: 4rem;
-                }
-            }
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          //display: none;
         }
 
-        input::placeholder {
-            font-family: 'Proxima Nova', sans-serif;
-            font-weight: 600;
-            font-size: 2rem;
-            line-height: 3rem;
-            color: $purple;
-        }
+
+      }
+
+
     }
 
-    .drag-drop-form {
-        max-width: 74rem;
-        border: 2px solid $purple;
-        border-radius: 15px;
-        margin: auto;
-        margin-top: 4rem;
-        background-color: $light-gray;
-        margin-bottom: 4rem;
-
-        img {
-            display: block;
-            margin: auto;
-            margin-top: 4.2rem;
-        }
-
-        p {
-            text-align: center;
-            color: $purple !important;
-            margin-top: 2.1rem;
-            margin-bottom: 4.2rem;
-        }
+    label {
+      color: $purple !important;
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 3rem;
     }
+
+    .submit-button {
+      display: block;
+      padding: 2.1rem 13.7rem;
+      border-radius: 15px;
+      font-family: Proxima Nova, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: #fff;
+      background-color: $purple;
+      margin-bottom: 2rem;
+      margin: auto;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    .agreement {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    a {
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+  }
+
 }
