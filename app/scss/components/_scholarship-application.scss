@@ -31,7 +31,6 @@
   }
 
   //tr:nth-child(odd)
-  //442, 538
 
   input::placeholder {
     font-family: 'Proxima Nova', sans-serif;
@@ -40,14 +39,6 @@
     line-height: 3rem;
     color: $purple;
   }
-
-
-  // .file-input {
-  //   display: inline-block;
-  //   border: 2px solid #ccc;
-  //   padding: 10px;
-  //   border-radius: 5px;
-  // }
 
   #file-list {
     margin-top: 10px;
@@ -72,15 +63,6 @@
     color: red;
     cursor: pointer;
   }
-
-  // .agreement {
-  //   margin-top: 10px;
-  // }
-
-  // #submit-button {
-  //   display: block;
-  //   margin-top: 10px;
-  // }
 
   .drag-drop-form {
     text-align: center;
@@ -111,13 +93,9 @@
           height: 100%;
           top: 0;
           left: 0;
-          //display: none;
+          opacity: 0;
         }
-
-
       }
-
-
     }
 
     label {
@@ -130,21 +108,11 @@
 
     .submit-button {
       display: block;
-      padding: 2.1rem 13.7rem;
-      border-radius: 15px;
-      font-family: Proxima Nova, sans-serif;
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 1.6rem;
-      line-height: 1.9rem;
-      color: #fff;
-      background-color: $purple;
-      margin-bottom: 2rem;
       margin: auto;
       margin-top: 4rem;
       margin-bottom: 4rem;
-      cursor: pointer;
-      border: none;
+      border: 1px solid $purple;
+      color: #fff;
     }
 
     .agreement {
@@ -157,5 +125,4 @@
       display: inline-block;
     }
   }
-
 }

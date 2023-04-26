@@ -1,0 +1,49 @@
+.footer404 {
+    position: absolute;
+    bottom: 1.7rem;
+    width: 100%;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: $sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__item404 {
+        color: $white;
+        font-weight: 500;
+        @media screen and (max-width: $sm) {
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+
+    .social-icons404 {
+        @media screen and (max-width: $sm) {
+            margin-top: 1rem;
+        }
+
+        &__item {
+            margin: 0 1rem 0 1rem;
+            text-align: center;
+        
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+
+            .facebook {
+                width: 16px;
+            }
+
+            .instagram, .linkedin {
+                width: 14px;
+            }
+        }
+    }
+}

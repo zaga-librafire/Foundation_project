@@ -1,5 +1,5 @@
-.header {
-    .header-navigation {
+.header404 {
+    &__navigation {
         position: fixed;
         width: 100%;
         z-index: 1;
@@ -10,7 +10,7 @@
             width: 83%;
         }
 
-        .logo-link {
+        .logo-link404 {
             @media screen and (max-width: $lg) {
                 font-size: 3rem;
             }
@@ -33,7 +33,7 @@
 
             a,
             span {
-                color: white;
+                color: $white;
                 font-weight: 500;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -48,7 +48,7 @@
         }
 
         nav ul {
-            .language-switcher-item {
+            .language-switcher-item404 {
                 display: flex;
                 margin-left: 0.5rem;
 

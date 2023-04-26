@@ -1,6 +1,10 @@
 .mission-about {
     margin-top: 10rem;
 
+    @media screen and (max-width: $md) {
+        margin-top: 3rem;
+    }
+
     .mission-about-content {
         margin-bottom: 4rem;
 
@@ -41,6 +45,10 @@
         margin-left: 4rem;
         padding: 4.1rem 6rem 0;
         flex: 1;
+
+        @media screen and (max-width: $md) {
+            margin-left: 0.5rem;
+        }
         
         h2, p {
             color: $purple !important;

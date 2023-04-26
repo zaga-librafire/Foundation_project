@@ -1,6 +1,12 @@
 .buttons {
     border-radius: 15px;
     padding: 2.1rem 4.7rem;
+
+    
+    @media screen and (max-width: $md) {
+      padding: 1.1rem 3rem;
+    }
+
     border: none;
     transition: all ease-in-out 0.2s;
 
@@ -13,4 +19,25 @@
         color: $blue;
     }
 
+}
+
+.other-buttons {
+      padding: 2.1rem 10.8rem;
+      border-radius: 15px;
+      font-family: Proxima Nova, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      cursor: pointer;
+
+      &.bg-blue:hover {
+        background-color: $yellow;
+        color: $blue;
+      }
+
+      &.bg-purple:hover {
+        background-color: $white;
+        color: $purple !important;
+      }
 }

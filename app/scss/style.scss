@@ -1,15 +1,23 @@
 //Base
 @import './base/breakpoints';
 @import './base/color';
+@import './base/fonts';
 @import './base/global';
 @import './base/reusable-classes';
-@import './base/fonts';
 
 
 // Components
+@import './components/mobile-tablet-navigation';
 @import './components/header';
 @import './components/banner';
 @import './components/mission';
 @import './components/button';
 @import './components/modal';
 @import './components/scholarship-application';
+@import './components/donate';
+@import './components/footer';
+@import './components/header404';
+@import './components/banner404';
+@import './components/footer404';
+@import './components/404mobile-tablet-navigation';
+

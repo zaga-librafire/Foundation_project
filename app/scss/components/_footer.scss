@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 14.4rem;
+    margin-bottom: 6rem;
+
+    @media screen and (max-width: $sm) {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    &__item {
+        color: $purple;
+        font-weight: 500;
+        @media screen and (max-width: $sm) {
+            margin-top: 1rem;
+            text-align: center;
+        }
+    }
+
+    .social-icons {
+        @media screen and (max-width: $sm) {
+            margin-top: 1rem;
+        }
+
+        &__item {
+            margin: 0 1rem 0 1rem;
+            text-align: center;
+        
+            svg {
+                path {
+                    fill: $purple;
+                }
+            }
+
+            .facebook {
+                width: 16px;
+            }
+
+            .instagram, .linkedin {
+                width: 14px;
+            }
+        }
+    }
+}
