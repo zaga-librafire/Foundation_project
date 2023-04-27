@@ -20,6 +20,12 @@ function jsTask(){
     .pipe(dest('dist', { sourcemaps: '.' }));
 }
 
+function jsTask404(){
+  return src('app/js/script404.js', { sourcemaps: true })
+    .pipe(terser())
+    .pipe(dest('dist', { sourcemaps: '.' }));
+}
+
 // Browsersync Tasks
 function browsersyncServe(cb){
   browsersync.init({
@@ -45,6 +51,7 @@ function watchTask(){
 exports.default = series(
   scssTask,
   jsTask,
+  jsTask404,
   browsersyncServe,
   watchTask
 );

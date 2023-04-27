@@ -1,54 +1,78 @@
+// window.addEventListener('scroll', function() {
+//   var navElement = document.querySelector('.header-navigation');
+//   if (window.scrollY > 500) {
+//     navElement.classList.add('sticky');
+//   } else {
+//     navElement.classList.remove('sticky');
+//   }
+// });
+
+
+var lastScrollTop = 0;
+var headerNavigatio = document.querySelector('.header-navigation');
+var headerHeight = headerNavigatio.offsetHeight;
+
+window.addEventListener('scroll', function() {
+  var st = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (st > lastScrollTop) {
+    // downscroll code
+    if (st > headerHeight / 2) {
+      headerNavigatio.style.display = 'none';
+    }
+  } else {
+    // upscroll code
+    if (st < headerHeight / 2) {
+      headerNavigatio.style.display = 'block';
+    }
+  }
+  lastScrollTop = st;
+});
+
+
+
 // BURGER MENU
 const headerNavigation = document.querySelector('.header');
-const headerNavigation404 = document.querySelector('.header404');
-const footer404 = document.querySelector('.footer404');
 const body = document.querySelector('body');
 
-
 function myFunction(x) {
-  headerNavigation404.classList.toggle('active');
+  headerNavigation.classList.toggle('active');
   x.classList.toggle("change");
  
 }
 
-function myFunction404(x) {
-  headerNavigation404.classList.toggle('active');
-  footer404.classList.toggle('active');
-  x.classList.toggle("change");
-}
 
-//MODAL
+//MODAL for index.html
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.querySelector(".modal");
 
 // Get the button that opens the modal
-var btn = document.getElementsByClassName("button-modal")[0]
-var btn1 = document.getElementsByClassName("button-modal-1")[0]
+var btn = document.getElementsByClassName("button-modal")[0];
+var btn1 = document.getElementsByClassName("button-modal-1")[0];
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function () {
+btn.onclick = function() {
   modal.style.display = "block";
 }
 
-btn1.onclick = function () {
+btn1.onclick = function() {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+span.onclick = function() {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-
 
 //FORM
 const fileInput = document.getElementById('file-input');
@@ -96,3 +120,7 @@ function checkAgreement() {
 document.getElementById('file-upload-form').addEventListener('submit', (event) => {
   event.preventDefault();
 });
+
+
+
+
