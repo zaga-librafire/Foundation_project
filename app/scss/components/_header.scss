@@ -3,9 +3,7 @@
     top: 0px;
     width: 100%;
     z-index: 1;
-    background: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 7px #555;
-
+   
     .header-navigation {
         margin-top: 20px;
         transition: margin-top .3s linear;
@@ -93,6 +91,12 @@
 
 }
 
-// .header.hide {
-//     transform: translateY(-100%);
-// }
+.header.hide {
+    //transform: translateY(-100%);
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 7px #555;
+    //margin-top: 20px;
+        transition: margin-top .3s linear;
+        //padding-bottom: 2rem;
+
+}

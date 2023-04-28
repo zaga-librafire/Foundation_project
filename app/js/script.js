@@ -1,14 +1,15 @@
-// const header = document.querySelector(".header");
-// let prevPosY = window.scrollY;
-//   addEventListener("scroll", () => {
-//     const posY = window.scrollY;
-//     if (posY <= prevPosY || posY <= 0) {
-//       header.classList.remove("hide");
-//     } else {
-//       header.classList.add("hide");
-//     }
-//     prevPosY = posY;
-//   });
+
+const header = document.querySelector(".header");
+let prevPosY = window.scrollY;
+  addEventListener("scroll", () => {
+    const posY = window.scrollY;
+    if (posY <= 0) {
+      header.classList.remove("hide");
+    } else {
+      header.classList.add("hide");
+    }
+    prevPosY = posY;
+  });
 
 // BURGER MENU
 const headerNavigation = document.querySelector('.header');
@@ -17,7 +18,6 @@ const body = document.querySelector('body');
 function myFunction(x) {
   headerNavigation.classList.toggle('active');
   x.classList.toggle("change");
-
 }
 
 

@@ -1,5 +1,4 @@
 // Mobile - Tablet
-
 @media screen and (max-width: 760px) {
   .header {
     height: 100vh;
@@ -24,7 +23,7 @@
   .burger-menu-container {
     display: inline-block;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 2rem;
     z-index: 1000;
@@ -63,14 +62,17 @@
     //   display: block;
     //   //position: absolute;
     // }
-   
 
     .header-navigation {
       display: flex;
       flex-direction: column;
       margin-top: 9rem;
       font-size: 20px;
-    
+
+      .header-logo {
+          display: block;
+      }
+
       nav,
       .header-navigation__list {
         display: flex;
