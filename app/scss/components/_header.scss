@@ -1,13 +1,20 @@
 .header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 7px #555;
+
     .header-navigation {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        z-index: 1;
-    
+        margin-top: 20px;
+        transition: margin-top .3s linear;
+        padding-bottom: 2rem;
+
+
 
         @media screen and (max-width: $desktop) {
-            position: absolute;
+            //position: absolute;
             justify-content: space-between;
             width: 83%;
         }
@@ -18,8 +25,8 @@
             }
         }
 
-        nav ul li {
-            &:not(:last-child) {
+        .header-navigation__list {
+            .header-navigation__item {
                 padding-left: 5rem;
                 padding-right: 5rem;
 
@@ -28,10 +35,9 @@
                     padding-right: 2rem;
                 }
             }
+        }
 
-            &:nth-last-child(2) {
-                padding-right: 0;
-            }
+        nav ul li {
 
             a,
             span {
@@ -41,18 +47,29 @@
                 text-transform: uppercase;
                 font-size: 1.6rem;
                 line-height: 1.9rem;
+                font-family: 'Proxima Nova', sans-serif;
             }
 
             .active {
                 font-weight: bold;
-                text-decoration: underline;
+                border-bottom: 1px solid #fff;
             }
         }
 
-        nav ul {
+
+        .language-switcher {
             .language-switcher-item {
                 display: flex;
-                margin-left: 0.5rem;
+                margin-left: 1rem;
+
+                &:nth-last-child(2) {
+                    padding-left: 5rem;
+
+                    @media screen and (max-width: $ls) {
+                        padding-left: 2rem;
+                    }
+                }
+
 
                 &:not(:last-child) {
 
@@ -64,15 +81,18 @@
                         background-color: #fff;
                         margin-left: 1rem;
                     }
-
                 }
 
+                .switcher-2{
+                    cursor: pointer;
+                }
             }
         }
     }
+
+
 }
 
-
-
-
-
+// .header.hide {
+//     transform: translateY(-100%);
+// }

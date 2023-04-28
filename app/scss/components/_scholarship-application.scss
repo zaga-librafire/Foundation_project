@@ -13,31 +13,39 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    flex-direction: column;
+
+    @media screen and (min-width: 720px) {
+     flex-direction: row;
+    }
 
     &__item {
-      flex: 1;
-      border: 1px solid $purple;
-      border-radius: 15px;
-      padding: 2.1rem 1.5rem;
+      width: 100%;
       margin-top: 4rem;
+      margin-right: 0;
 
-      @media screen and (min-width: 442px) {
-        &:not(:last-child) {
-          margin-right: 4rem;
-        }
+      @media screen and (min-width: 720px) {
+        width: 47%;
+        margin-right: 2rem;
+      }
+
+      @media screen and (min-width: 1024px) {
+        width: 23.5%;
+        margin-right: 4rem;
+        flex: 1;
       }
     }
   }
 
-  //tr:nth-child(odd)
-
-  input::placeholder {
+  input {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    line-height: 3rem;
-    color: $purple;
+    line-height: 1rem;
+
+    &::placeholder{
+      color: $purple;
+    }
   }
 
   #file-list {
@@ -94,6 +102,8 @@
           top: 0;
           left: 0;
           opacity: 0;
+          cursor: pointer;
+          padding: 0;
         }
       }
     }
@@ -104,6 +114,7 @@
       font-weight: 600;
       font-size: 2rem;
       line-height: 3rem;
+      cursor: pointer;
     }
 
     .submit-button {
@@ -118,6 +129,10 @@
     .agreement {
       text-align: center;
       margin-top: 1rem;
+
+      input {
+        cursor: pointer;
+      }
     }
 
     a {

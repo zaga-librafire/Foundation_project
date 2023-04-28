@@ -23,10 +23,12 @@
         <!-- Modal content -->
         <div class="modal-content404">
             <span class="close404">&times;</span>
-            <form action="/">
-                <label for="quantity">Enter the amount you want to donate:</label><br><br>
-                <input type="number" id="quantity" name="quantity" min="0"><br><br><br>
-                <input class="donate-submit404" type="submit" value="Donate">
+            <form action="http://localhost:3000/404-one-page.html">
+                <h2 for="quantity">Enter the amount you want to donate:</h2>
+                <div class="table-caption">
+                    <input type="number" id="quantity" name="quantity" min="0">
+                    <button class="buttons bg-blue ff-proxima-medium text-decoration font-16 text-white text-uppercase" type="submit">Donate</button>
+                </div>
             </form>
         </div>
 
@@ -37,12 +39,16 @@
             <div class="header404__navigation flex justify-content-between items-center mt-8 container">
                 <a class="text-decoration" href="/"><span
                         class="logo-link404 text-uppercase ff-proxima-black text-white font-36">Foundation</span></a>
-                <nav>
-                    <ul class="flex list-style-none">
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="http://">Apply</a></li>
-                        <li><a class="button-modal-2 buttons bg-purple" href="#"><span>Donate now</span></a></li>
+                <nav class="flex">
+                    <ul class="header404-navigation-list flex list-style-none">
+                        <li class="header404-navigation-item"><a href="#mission">Mission</a></li>
+                        <li class="header404-navigation-item"><a href="#about">About</a></li>
+                        <li class="header404-navigation-item"><a href="http://">Apply</a></li>
+                        <li class="header404-navigation-item"><a class="button-modal-2 buttons bg-purple" href="#"><span>Donate now</span></a></li>
+                        
+                    </ul>
+                        
+                    <ul class="language-switcher flex list-style-none">
                         <li class="language-switcher-item404"><span class="active">Eng</span></li>
                         <li class="language-switcher-item404"><span class="switcher-2">Srb</span></li>
                     </ul>
@@ -65,12 +71,17 @@
         </div>
     </section>
 
-    <section class="footer404">
+    <footer class="footer404">
         <div class="container">
-            <a class="text-decoration" href="/"><span
-                class="text-uppercase ff-proxima-black text-white font-28 ml-2">Foundation</span></a>
-            <span class="footer404__item404">© COPYRIGHT 2022. ALL RIGHTS RESERVED.</span>
+            <div>
+                <a class="text-decoration" href="/"><span
+                    class="text-uppercase ff-proxima-black text-white font-28 ml-2">Foundation</span></a>
+            </div>
 
+            <div class="footer404__item404">
+                <span>© COPYRIGHT 2022. ALL RIGHTS RESERVED.</span>
+            </div>
+            
             <div class="social-icons404 flex items-center">
                 <a class="social-icons404__item" href="/">
                     <svg class="facebook" xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +107,7 @@
             </div>
         </div>
             
-    </section> 
+    </footer> 
 
     <script src="/dist/script404.js"></script>
 

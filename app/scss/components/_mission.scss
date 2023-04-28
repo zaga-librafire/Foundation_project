@@ -8,20 +8,26 @@
     .mission-about-content {
         margin-bottom: 4rem;
 
-        @media screen and (max-width: $md) {
+        @media screen and (max-width: $ls) {
             flex-direction: column;
         }
 
         .mission-text-content {
-            max-width: 94rem;
             border: 2px solid #3A86FF;
             border-radius: 15px;
             margin-right: 4rem;
             padding: 4.1rem 6rem 0;
             flex: 1;
+
+            @media screen and (max-width: $ls) {
+                margin-right: 0;
+            }
+
+            @media screen and (max-width: $sx) {
+                padding: 2.1rem 2rem 0;
+            }
     
             p {
-                max-width: 82rem;
                 min-height: 17.2rem;
             }
         }
@@ -39,15 +45,18 @@
     }
 
     .about-text-content {
-        max-width: 94rem;
         border: 2px solid #8338EC;
         border-radius: 15px;
         margin-left: 4rem;
         padding: 4.1rem 6rem 0;
         flex: 1;
 
-        @media screen and (max-width: $md) {
-            margin-left: 0.5rem;
+        @media screen and (max-width: $sx) {
+            padding: 2.1rem 2rem 0;
+        }
+
+        @media screen and (max-width: $ls) {
+            margin-left: 0;
         }
         
         h2, p {
@@ -55,7 +64,6 @@
         }
 
         p {
-            max-width: 82rem;
             min-height: 17.2rem;
 
             a {

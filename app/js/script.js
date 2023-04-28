@@ -1,35 +1,14 @@
-// window.addEventListener('scroll', function() {
-//   var navElement = document.querySelector('.header-navigation');
-//   if (window.scrollY > 500) {
-//     navElement.classList.add('sticky');
-//   } else {
-//     navElement.classList.remove('sticky');
-//   }
-// });
-
-
-var lastScrollTop = 0;
-var headerNavigatio = document.querySelector('.header-navigation');
-var headerHeight = headerNavigatio.offsetHeight;
-
-window.addEventListener('scroll', function() {
-  var st = window.pageYOffset || document.documentElement.scrollTop;
-  
-  if (st > lastScrollTop) {
-    // downscroll code
-    if (st > headerHeight / 2) {
-      headerNavigatio.style.display = 'none';
-    }
-  } else {
-    // upscroll code
-    if (st < headerHeight / 2) {
-      headerNavigatio.style.display = 'block';
-    }
-  }
-  lastScrollTop = st;
-});
-
-
+// const header = document.querySelector(".header");
+// let prevPosY = window.scrollY;
+//   addEventListener("scroll", () => {
+//     const posY = window.scrollY;
+//     if (posY <= prevPosY || posY <= 0) {
+//       header.classList.remove("hide");
+//     } else {
+//       header.classList.add("hide");
+//     }
+//     prevPosY = posY;
+//   });
 
 // BURGER MENU
 const headerNavigation = document.querySelector('.header');
@@ -38,7 +17,7 @@ const body = document.querySelector('body');
 function myFunction(x) {
   headerNavigation.classList.toggle('active');
   x.classList.toggle("change");
- 
+
 }
 
 
@@ -53,7 +32,7 @@ var btn1 = document.getElementsByClassName("button-modal-1")[0];
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -81,7 +60,7 @@ const agreementCheckbox = document.getElementById('agreement-checkbox');
 const submitButton = document.getElementById('submit-button');
 
 fileInput.addEventListener('change', () => {
-  //fileList.innerHTML = ''; 
+  //fileList.innerHTML = '';
   for (let i = 0; i < fileInput.files.length; i++) {
     const file = fileInput.files[i];
     const fileItem = document.createElement('div');
