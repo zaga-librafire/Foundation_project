@@ -58,11 +58,6 @@
     overflow-y: scroll;
     background-color: $yellow !important;
     
-    // &.active {
-    //   display: block;
-    //   //position: absolute;
-    // }
-
     .header-navigation {
       display: flex;
       flex-direction: column;
@@ -88,10 +83,6 @@
 
         &:nth-last-child(2) {
           padding-left: 0;
-        }
-
-        .switcher-2 {
-          padding-left: 1rem;
         }
       }
     }

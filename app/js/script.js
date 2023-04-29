@@ -1,4 +1,4 @@
-
+//HEADER SCROLL
 const header = document.querySelector(".header");
 let prevPosY = window.scrollY;
   addEventListener("scroll", () => {

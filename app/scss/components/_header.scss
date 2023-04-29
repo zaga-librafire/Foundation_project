@@ -12,7 +12,6 @@
 
 
         @media screen and (max-width: $desktop) {
-            //position: absolute;
             justify-content: space-between;
             width: 83%;
         }
@@ -64,7 +63,7 @@
                     padding-left: 5rem;
 
                     @media screen and (max-width: $ls) {
-                        padding-left: 2rem;
+                        padding-left: 0rem;
                     }
                 }
 
@@ -92,11 +91,7 @@
 }
 
 .header.hide {
-    //transform: translateY(-100%);
     background: rgba(0, 0, 0, .5);
     box-shadow: 0 0 7px #555;
-    //margin-top: 20px;
-        transition: margin-top .3s linear;
-        //padding-bottom: 2rem;
-
+    transition: margin-top .3s linear;
 }

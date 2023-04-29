@@ -37,10 +37,6 @@
             object-fit: cover;
             border-radius: 15px;
             max-width: 54rem;
-
-            @media screen and (max-width: $md) {
-                //margin: auto;
-            }
         }
     }
 
